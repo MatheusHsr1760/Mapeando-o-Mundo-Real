@@ -9,7 +9,15 @@ Resposta:
 
 #### 2 - Quem é o Servidor?
 Resposta:
-* O servidor é o sistema central do aplicativo de delivery (os computadores/sistemas da empresa).
+* Servidor do iFood
+É o sistema principal. Ele recebe os pedidos do cliente, informações do restaurante e a localização do entregador. Depois processa tudo e envia as respostas.
+
+* Servidor do Restaurante
+É o sistema da loja. Ele recebe o pedido enviado pelo iFood, salva no sistema do restaurante e confirma.
+Ele é servidor quando recebe o pedido e cliente quando avisa que o pedido está pronto.
+
+* Servidor do Banco / Pagamento
+É o sistema que cuida do pagamento. Ele verifica se a transação é segura e autoriza a compra com a operadora do cartão.
 
 #### 3 - Desenhem o fluxo da mensagem: Como é o pedido e como é a resposta?
 Resposta:
