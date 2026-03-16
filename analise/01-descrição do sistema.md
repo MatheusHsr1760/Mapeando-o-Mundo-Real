@@ -3,21 +3,21 @@
 
 #### 1 - Quem desempenha o papel de cliente(s)?
 Resposta: 
-* O Usuário que pede no Ifood.
-* O Restaurante que entrega pelo Ifood.
-* Entregador que fornece serviço pro Ifood
+ O papel de cliente é desempenhado por todos os participantes que solicitam algum 
+serviço ou informação ao sistema.
+* Usuário (cliente final): é quem utiliza o aplicativo para realizar o pedido de comida.
+* Restaurante: atua como cliente quando solicita ao sistema informações sobre 
+novos pedidos, status de pagamento ou chamada de entregador.
+* Entregador: também atua como cliente ao solicitar corridas, enviar sua localização e 
+receber atualizações sobre as entregas.
 
 #### 2 - Quem é o Servidor?
 Resposta:
-* Servidor do iFood
-É o sistema principal. Ele recebe os pedidos do cliente, informações do restaurante e a localização do entregador. Depois processa tudo e envia as respostas.
-
-* Servidor do Restaurante
-É o sistema da loja. Ele recebe o pedido enviado pelo iFood, salva no sistema do restaurante e confirma.
-Ele é servidor quando recebe o pedido e cliente quando avisa que o pedido está pronto.
-
-* Servidor do Banco / Pagamento
-É o sistema que cuida do pagamento. Ele verifica se a transação é segura e autoriza a compra com a operadora do cartão.
+  O servidor é o sistema central do iFood, ele é responsável por receber e analisar os 
+pedidos feitos pelos clientes, enviar essas solicitações ao restaurante, chamar o 
+entregador, processar os dados do pagamento e atualizar todas as informações do 
+pedido até a entrega ser finalizada.  Ou seja, é o sistema que controla e organiza 
+toda a comunicação entre cliente, restaurante e entregador.
 
 #### 3 - Desenhem o fluxo da mensagem: Como é o pedido e como é a resposta?
 Resposta:
@@ -48,5 +48,9 @@ Resposta:
 * O cliente envia sua avaliação pelo aplicativo.
 
 #### 4 - O que aconteceria se a internet do motorista/restaurante caísse no meio do processo?
-Resposta:
-* Pedido não chegaria, pode ser cancelado, atrasaria, etc...
+Resposta: Se a conexão com a internet do entregador ou do restaurante for interrompida, a 
+comunicação com o servidor do sistema também será afetada.
+Isso pode causar atraso nas atualizações do pedido, falhas na confirmação das 
+etapas ou dificuldade para localizar o entregador em tempo real.
+Dependendo do tempo sem conexão, o sistema pode até cancelar automaticamente 
+a entrega ou gerar inconsistências nas informações mostradas ao cliente.
